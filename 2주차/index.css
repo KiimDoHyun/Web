@@ -1,0 +1,55 @@
+body{
+    /*
+    overflow-x ,-y 스크롤 기능.'
+    overflow: auto --> 범위를 넘어가면 자동으로 스크롤생성.
+    
+    max height,width -> 최대 크기 지정.
+    min height,width -> 최소 크기 지정.
+
+    ㅁ position
+    - static (기본)
+    - fixed : top,left의 절대 위치에 따라 고정.(화면의 특정 위치에서고정되어서 스크롤 해도 고정)
+    - sticky : top,left의 특정 위치에서 움직이지 않음.
+    ( 상단 바가 위에서 특정 위치에 존재하는경우 아래로 스크롤 할때 사라지지 않고
+    특정 값에서 고정)
+    - absolute : top,left 에 따라 위치를 결정.(겹쳐서 보이게 할 수 있음.)
+        -tranform: translate(x,y) -> absolute 속성을 준상태에서 x,y 값을 주면 
+                    자기 자신을 x,y 로 옮기는 기능.
+
+    - relative : top,left 를 자기 위치 기준으로 상대적으로.
+    relative와 absolute 는 다른 요소들과 겹침.
+
+    ㅁ display
+    block : 수직으로 정렬
+    inline : 수평으로 정렬
+    flex : 내부 요소를 유연하게?
+    justify-content : center 가운데로
+    ul 에 이 flex, fustify-content:center 를 주면
+    ul 이 가진 li요소들을 전부 가운데로 정렬.(좌우 여백이 동일하게)
+
+    justify-content : space-between -> 간격을 동일하게 해줌.(가로로만 계산?)
+    align-items:center 로 하면 안에 있는 요소를 가운데로.(상하좌우를 동일하게 가운데로)
+    -> justify-content : space-between 와 같이 주면 해당영역안에서 중앙으로, 각 요소의 간격을
+    자동으로 계산해서 동일하게해줌.
+
+    inline-block : 해당 클래스의 요소를 inline block으로
+
+    table : 테이블 전체.
+    tablecell : 테이블 안에 들어가는 요소.
+
+    class table
+    class tablecell
+    
+    table 에 table 요소
+    tablecell 에 tablecell 요소를 주면 테이블 처럼???
+
+    ㅁ visibility
+    - hidden 안보이게(있는데 안보이게)
+    - unset 아무 속성없음.
+    - node 없어짐(아예 삭제해버림)
+
+    <부트 스트랩>
+
+    
+    */
+}

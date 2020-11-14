@@ -1,0 +1,155 @@
+/* 7세그먼트 폰트 */
+@font-face {
+    font-family: seg;
+    src: url('./Seven_Segment.ttf');
+}
+
+.loginform {
+    display: none;
+}
+
+.loginHeader {
+    font-size: 150px;
+}
+
+#goMain, #goBack {
+    width: 250px;
+}
+
+#clear {
+    width: 300px;
+}
+/* 텍스트 */
+h1, #clockText {
+    font-family: seg;
+}
+
+#clockText {
+    font-size: 150px;
+}
+
+
+
+#time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 시계 */
+.backGround{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #091921;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background: url('./clock.png');
+    background-size: cover;
+    border: 3px solid;
+    border-radius: 50%;
+
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+    position: absolute;
+}
+
+.clock .hour, .hr {
+    width: 160px;
+    height: 160px;
+}
+
+.clock .min, .mn {
+    width: 190px;
+    height: 190px;
+}
+
+.clock .sec, .sc {
+    width: 230px;
+    height: 230px;
+}
+
+.hr, .mn, .sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #ff105e;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #fff;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #fff;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+
+/* 리스트 */
+#p, #f {
+    border: 5px solid #efefef;
+}
+
+#pending, #finished {
+    list-style: none;
+}
+
+#pending, #finished, li {
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+    font-size: 12px;
+}
+
+li:last-child {
+    border-bottom: 0px;
+}
+
+/* 버튼 */
+#pendingMove, #finishedMove {
+    font-family: bold;
+    width: 60px;
+}

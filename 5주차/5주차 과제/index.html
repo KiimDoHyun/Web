@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <!--필수 사항 : 시계, 로그인, 리스트 2개
+    로그인, 리스트는 유지되어야 함.
+    로그인은 닉네임만 입력.-> 화면 전환 효과.
+    리스트 : pending, finished
+    각 리스트에 삭제, 이동 버튼 존재.-->
+    <div class="container">
+        <div class="loginform" id="loginform">
+            <div class="row">
+                <div class="col-12 offset-lg-2 offset-md-0">
+                    <p class="loginHeader">WELCOME</p>
+                </div>
+                <div class="col-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="id" placeholder="Your Nickname">
+                    </div>
+                </div>
+                <div class="col-3 offset-1 mt-3">
+                    <button class="btn btn-primary" id="goMain" type="button">Login</button>
+                </div>
+                <div class="col-3 offset-3 mt-3">
+                    <button class="btn btn-primary" id="goBack" type="button">Goback</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main" id="main">
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <button class="btn btn-info" id="login" type="button">Login</button>
+                    <span>
+                        <h2 id="intel">Guest 님 환영합니다.</h2>
+                    </span>
+                </div>
+            </div>
+            <!-- 시간 -->
+            <div class="row" id="time">
+                <div class="col-12 col-md-12 col-lg-6 offset-md-6 offset-3 offset-lg-0">
+                    <div class ="backGround mt-5">
+                        <div class="clock">
+                            <div class="hour">
+                                <div class="hr" id="hr"></div>
+                            </div>
+                            <div class="min">
+                                <div class="mn" id="mn"></div>
+                            </div>
+                            <div class="sec">
+                                <div class="sc" id="sc"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 text-center">
+                    <div>
+                        <p id="clockText">00 : 00 : 00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 목록 추가 -->
+            <div class="row mt-5 mb-5">
+                <div class="col-12">
+                    <div class="input-group">
+                        <input type="text" id="input" class="form-control" placeholder="Todo">
+                        <span class="input-group-btn">
+                        <button class="btn btn-info" id="add" type="button">Add</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 목록 -->
+            <div class="row mt-5">
+                <div class="col-12 col-md-5" id="p">
+                    <h3>Pending</h3>
+                    <ul id="pending">
+
+                    </ul>
+                    <button type="button" id="pendingMove" class="mt-5 mb-5 btn btn-primary">→</button>
+                    <button type="button" id="pendingDel" class="mt-5 mb-5 btn btn-danger">삭제</button>
+                </div>
+                <div class="col-12 col-md-5 offset-md-2" id="f">
+                    <h3>Finished</h3>
+                    <ul id="finished">
+
+                    </ul>
+                    <button type="button" id="finishedMove" class="mt-5 mb-5 btn btn-primary">←</button>
+                    <button type="button" id="finishedDel" class="mt-5 mb-5 btn btn-danger">삭제</button>
+                </div>
+            </div>
+
+            <!-- 초기화 -->
+            <div class="row mt-5 mb-2">
+                <div class="col-12 offset-md-3 offset-lg-4 offset-2">
+                    <button type="button" id="clear" class="btn btn-danger">초기화</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

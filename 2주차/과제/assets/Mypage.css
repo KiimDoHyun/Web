@@ -1,0 +1,50 @@
+/* 오버워치 폰트 등록 */
+/* koverwatch 로 사용 가능 */
+@font-face {
+    font-family: koverwatch;
+    src: url('./overwatch_font.ttf');
+
+}
+
+/* 폰트 적용 */
+/* 소문자도 대문자로 변경 되는 듯*/
+th,td,h3,h2,h1,h4, p,.panel-heading, .btn_login {
+    font-family: koverwatch;
+}
+
+/* 모스트 픽 상단 제목 */
+.panel-heading {
+    font-size: 30px;
+}
+
+/* 패치 노트 사진 */
+.media-object {
+    width: 64px;
+    height: 64px;
+}
+
+/* 검색바 sticky 속성부여 */
+.Search {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+/* 
+
+sticky가 적용이 되긴 하는데 
+다른 row 내용 뒤에 나와서 z-index로 상위로 올림 
+
+*/
+
+.form-control {
+    z-index: 500;
+}
+
+.row {
+    z-index: 100;
+}
+
+.btn_login {
+    width: 100px;
+}
